@@ -1,0 +1,385 @@
+:root {
+    --main-color:rgb(83, 88, 92);
+    --back-color:rgb(255, 255, 255);
+}
+
+.completebody {
+    /* background-color: white; */
+    background-color: var(--back-color);
+    width: 100%;
+    color:var(--main-color);
+}
+
+.navcursur {
+    justify-content: center;
+    align-items: center;
+}
+
+.navHead{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 24px;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto 3%;
+}
+
+.navHead:hover{
+    color: rgb(181, 181, 223);
+}
+
+.secondnav {
+    text-align: center;
+    height: 50px;
+    margin: auto 5%;
+    padding: auto 4%;
+    align-items: center;
+}
+
+.secondnav .side a {
+    font-size: 15px;
+    font-weight: 500;
+    /* color: white; */
+    color: var(--main-color);
+    text-decoration: none;
+    margin-right: 40px;
+    /* margin-bottom: 0px; */
+    /* padding: 1px; */
+}
+
+.secondnav .side a:hover {
+    color: rgb(181, 181, 223);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.mode{
+    position: fixed;
+    height: max-content;
+    float: left;
+    top: 100px;
+    justify-content: center;
+    width: fit-content;
+    z-index: 1;
+}
+
+.dosocial {
+    position: fixed;
+    height: max-content;
+    float: left;
+    top: 200px;
+    justify-content: center;
+    width: fit-content;
+    z-index: 1;
+}
+
+.icon .fa {
+    box-sizing: border-box;
+    background-color: rgb(158, 166, 173);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    /* border:2px solid black; */
+    border-radius: 50px;
+    /* height: 40px; */
+    width: 40px;
+    /* padding-top: 3px; */
+}
+
+.icon {
+    box-sizing: border-box;
+    font-size: 24px;
+    background-color: rgb(158, 166, 173);
+    width: fit-content;
+    text-align: center;
+    padding: 5px;
+    margin-right: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.social {
+    box-sizing: border-box;
+    display: inline-flexbox;
+    font-size: 24px;
+    background-color: rgb(158, 166, 173);
+    color: white;
+    /* border: 2px solid black; */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 0px;
+    margin-left: 10px;
+    /* height: 60px; */
+    opacity: 0;
+    overflow: hidden;
+    padding: 9px;
+}
+
+.icon:hover .fa {
+    color: white;
+}
+
+.icon:hover .social {
+    /* opacity: 1; */
+    animation-name: boxsocial;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    /* width: fit-content; */
+}
+
+@keyframes boxsocial {
+    to{
+        opacity: 1;
+    }
+}
+
+.main {
+    margin-top: 70px;
+    /* height: fit-content; */
+    width: max-content;
+}
+
+.sectionA{
+    height:fit-content ;
+    min-height: 360px;
+    align-items: center;
+    padding: auto;
+}
+
+.animation-box{
+    width: max-content;
+    float: left;
+    height: 300px;
+    align-items: center;
+    margin: auto;
+}
+
+.animation{
+    align-items: center;
+    /* height: 50px; */
+    font-size: 30px;
+}
+
+.animated-item{
+    position: relative;
+    width: max-content;
+    /* overflow: hidden; */
+}
+
+.animation-item::after,.animated-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.animated-item::before{
+    background-color: var(--back-color);
+    animation-name: writetext;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(28);
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+} 
+
+.animation-item:nth-child(2n+2){
+    animation-timing-function: steps(15);
+}
+
+.animation-item:nth-child(2n+2){
+    animation-timing-function: steps(12);
+}
+
+@keyframes writetext{
+    from{
+        content: " |";
+    }
+    to{
+        left:100%;
+        content: " |";
+    }
+}
+
+.headsvg {
+    float: right;
+    border: 3px solid black;
+    width: 300px;
+    height: 300px;
+    border-radius: 250px;
+    align-items: center;
+    margin: auto 5px;
+}
+
+.skills{
+    width: 50%;
+    height: fit-content;
+    /* text-align: center; */
+    margin:2% auto;
+}
+
+.skills h1{
+    margin: auto 10% 5% 10%;
+}
+
+.prdesign,.edudesign{
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto 10%;
+}
+
+.edudesign{
+    margin: auto 18%;
+}
+
+.nonprogs{
+    width: 80px;
+    height: 40px;
+    padding: auto 10%;
+    margin: auto 10%;
+}
+
+.nonprogs p{
+    background-color: rgb(158, 166, 173);
+    border-top:1px solid rgb(158, 166, 173);
+    width: 5px;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+.progs{
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(158, 166, 173);
+    color: white;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: auto;
+    margin: auto;
+}
+
+.progs p,.inwhat p{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.line{
+    width: 10px;
+}
+
+.inwhat{
+    font-size: 25px;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    text-transform: uppercase;
+    text-rendering: optimizeSpeed;
+    font-weight: 600;
+}
+
+.line2{
+    background-color: rgb(158, 166, 173);
+    width: 4px;
+    height: 40px;
+}
+
+.line3{
+    font-size: 24px;
+    color: rgb(158, 166, 173);
+    /* width: 20px; */
+}
+
+.footer{
+    clear: both;
+    margin: 3% auto;
+}
+
+.footer .sec1,.sec2,.sec3{
+    clear: both;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    text-decoration: none;
+}
+
+.sec1 h1{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.projectlink{
+    text-align: center;
+    float: left;
+    height: fit-content;
+    width: 30%;
+    margin: auto;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.projectlink a{
+    color:var(--main-color);
+    text-decoration: none;
+    width: 100%;
+    padding: 1%;
+    text-transform: uppercase;
+}
+
+.projectlink a:hover{
+    background-color: var(--main-color);
+    color:var(--back-color);
+    padding:2% 20%;
+}
+
+.contact{
+    float: right;
+    text-decoration: none;
+}
+
+.contact .fa{
+    font-size: 20px;
+    margin: 2% auto;
+    float:right;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 2%;
+}
+
+.sec3 h6{
+    width: fit-content;
+    margin: auto;
+}
+
+@media(max-width:1000px){
+    .animation-box{
+        float: none;
+    }
+    .headsvg{
+        background-color: black;
+        float: none;
+        margin: auto;
+    }
+
+    .skills{
+        width: 100%;
+        margin:10% auto;
+    }
+}
+
+@media (max-width:790px) {
+    .projectlink{
+        width: 100%;
+    }
+}
