@@ -1,6 +1,6 @@
 :root {
-    --main-color:rgb(83, 88, 92);
-    --back-color:rgb(255, 255, 255);
+    --main-color:rgb(255, 255, 255);
+    --back-color:rgb(51, 52, 53);
 }
 
 .completebody {
@@ -122,8 +122,8 @@
 .icon:hover .social {
     /* opacity: 1; */
     animation-name: boxsocial;
-    animation-duration: 1s;
-    animation-iteration-count: initial;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
     animation-direction: alternate;
@@ -131,9 +131,49 @@
 }
 
 @keyframes boxsocial {
-    to{
+    from{
         opacity: 1;
     }
+    to{
+        opacity: 0;
+    }
+}
+
+.formdisplay{
+    cursor: pointer;
+}
+
+#contactform{
+    width: 27%;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    top:100px;
+    left: 25%;
+    right: 25%;
+    display: none;
+    border:2px solid var(--main-color);
+    border-radius: 20px;
+}
+
+.cut{
+    font-size: 30px;
+    color: rgb(158, 166, 173);
+}
+
+.cut .fa{
+    float: right;
+    margin: 2%;
+}
+
+#contactform input,#contactform textarea{
+    border-radius: 10px;
+}
+
+#contactform button{
+    float: right;
+    background-color: rgb(158, 166, 173);
+    margin: 2%;
 }
 
 .main {
@@ -150,7 +190,7 @@
 }
 
 .animation-box{
-    width: max-content;
+    width: fit-content;
     float: left;
     height: 300px;
     align-items: center;
@@ -216,6 +256,7 @@
     border-radius: 250px;
     align-items: center;
     margin: auto 5px;
+    overflow: hidden;
 }
 
 .skills{
@@ -363,8 +404,10 @@
 }
 
 @media(max-width:1000px){
+
     .animation-box{
         float: none;
+        /* width: 100%; */
     }
     .headsvg{
         background-color: black;
@@ -376,10 +419,17 @@
         width: 100%;
         margin:10% auto;
     }
+    #contactform{
+        width: 40%;
+        left: 10%;
+    }
 }
 
 @media (max-width:790px) {
     .projectlink{
         width: 100%;
+    }
+    #contactform{
+        width: 60%;
     }
 }

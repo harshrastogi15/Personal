@@ -21,7 +21,7 @@
             <div class="side">
                 <a href="">About me</a>
                 <a href="">PROJECT</a>
-                <a href="">Contact me</a>
+                <a class="formdisplay">Contact me</a>
             </div>
         </div>
     </div>
@@ -43,6 +43,31 @@
         </p>
     </div>
     <!-- main  -->
+    <div id="contactform">
+        <div class="card-body">
+            <span class="cut">
+                <i class="fa fa-times" onclick="dnone()"></i>
+            </span>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                        aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Message" id="floatingTextarea2"
+                        style="height: 100px; resize: none;"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1"></label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
     <div class=" main container-fluid">
         <div class="sectionA container">
             <div class="animation-box">
@@ -54,78 +79,80 @@
                 </div>
             </div>
             <div class="headsvg">
-                <img src="#" alt="">
+                <img src="./public/images/IMG.jpg" alt="" height="300px" width="300px">
             </div>
         </div>
         <div class="sectionB container">
-        <div class="skills float-lg-start">
-            <h1>SKILLS</h1>
-            <table class="prdesign">
-                <tr >
-                    <td class="progs">
-                        <p>50%</p>
-                    </td>
-                    <td class="line"></td>
-                    <td class="inwhat">
-                        <p>html</p>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="nonprogs"><p></p></td>
-                    <td class="line"></td>
-                    <td class="inwhat"></td>
-                </tr>
-                <tr >
-                    <td class="progs">
-                        <p>50%</p>
-                    </td>
-                    <td class="line"></td>
-                    <td class="inwhat">
-                        <p>html</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="nonprogs">
-                        <p ></p>
-                    </td>
-                    <td class="line"></td>
-                    <td class="inwhat"></td>
-                </tr>
-                <tr>
-                    <td class="progs">
-                        <p>50%</p>
-                    </td>
-                    <td class="line"></span></td>
-                    <td class="inwhat">
-                        <p>html</p>
-                    </td>
-                </tr> 
-            </table>
+            <div class="skills float-lg-start">
+                <h1>SKILLS</h1>
+                <table class="prdesign">
+                    <tr>
+                        <td class="progs">
+                            <p>50%</p>
+                        </td>
+                        <td class="line"></td>
+                        <td class="inwhat">
+                            <p>html</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nonprogs">
+                            <p></p>
+                        </td>
+                        <td class="line"></td>
+                        <td class="inwhat"></td>
+                    </tr>
+                    <tr>
+                        <td class="progs">
+                            <p>50%</p>
+                        </td>
+                        <td class="line"></td>
+                        <td class="inwhat">
+                            <p>html</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nonprogs">
+                            <p></p>
+                        </td>
+                        <td class="line"></td>
+                        <td class="inwhat"></td>
+                    </tr>
+                    <tr>
+                        <td class="progs">
+                            <p>50%</p>
+                        </td>
+                        <td class="line"></span></td>
+                        <td class="inwhat">
+                            <p>html</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="skills float-lg-end">
+                <h1>EDUCATION</h1>
+                <table class="edudesign">
+                    <tr>
+                        <td class="line2"></td>
+                        <td class="line3"><span class="fa fa-caret-right"></span></td>
+                        <td class="inwhat">IIIT BH</td>
+                    </tr>
+                    <tr>
+                        <td class="line2"></td>
+                        <td class="line3"></td>
+                        <td class="inwhat"></td>
+                    </tr>
+                    <tr>
+                        <td class="line2"></td>
+                        <td class="line3"><span class="fa fa-caret-right"></span></td>
+                        <td class="inwhat">IIITBH</td>
+                    </tr>
+                </table>
+
+            </div>
         </div>
-        <div class="skills float-lg-end">
-            <h1>EDUCATION</h1>
-            <table class="edudesign">
-                <tr>
-                    <td class="line2"></td>
-                    <td class="line3"><span class="fa fa-caret-right"></span></td>
-                    <td class="inwhat">IIIT BH</td>
-                </tr>
-                <tr>
-                    <td class="line2"></td>
-                    <td class="line3"></td>
-                    <td class="inwhat"></td>
-                </tr>
-                <tr>
-                    <td class="line2"></td>
-                    <td class="line3"><span class="fa fa-caret-right"></span></td>
-                    <td class="inwhat">IIITBH</td>
-                </tr>
-            </table>
-            
-        </div>
-    </div>
         <div class="sectionC container">
-            
+
         </div>
     </div>
     </div>
@@ -146,13 +173,14 @@
             </p>
             <p class="projectlink">
                 <a href="https://harshrastogi15.github.io/portfolio/soundfun/soundfun.html">Sound Fun</a>
-            </p> 
+            </p>
         </div>
         <div class="sec2">
             <div class="contact">
                 <h4>Contact</h4>
                 <p class="email">
-                    <a href="mailto:harshrastogi172000@gmail.com" class="fa fa-envelope">harshrastogi172000@gmail.com</a>
+                    <a href="mailto:harshrastogi172000@gmail.com"
+                        class="fa fa-envelope">harshrastogi172000@gmail.com</a>
                 </p>
                 <p class="phone">
                     <span class="fa fa-phone">+91 7455878221</span>
