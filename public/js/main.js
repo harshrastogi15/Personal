@@ -15,10 +15,17 @@ mode.addEventListener('click',()=>{
 });
 
 form.addEventListener('click',()=>{
-    // console.log("heloo");
     contactform.style.display="block";
 });
 
 function dnone(){
     contactform.style.display="none";
 }
+
+var form = document.querySelector('form');
+
+form.addEventListener('submit',()=>{
+    contactform.style.display="none";
+    location.reload();
+
+});

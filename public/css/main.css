@@ -1,6 +1,8 @@
 :root {
     --main-color:rgb(255, 255, 255);
     --back-color:rgb(51, 52, 53);
+    /* --main-color:rgb(83, 88, 92);
+    --back-color:rgb(255, 255, 255); */
 }
 
 .completebody {
@@ -154,11 +156,18 @@
     display: none;
     border:2px solid var(--main-color);
     border-radius: 20px;
+    /* background-color: rgb(158, 166, 173); */
+    background-color: var(--main-color);
+}
+
+#contactform h4{
+    color: var(--back-color);
+    margin: 2%;
 }
 
 .cut{
     font-size: 30px;
-    color: rgb(158, 166, 173);
+    color: black;
 }
 
 .cut .fa{
@@ -168,12 +177,16 @@
 
 #contactform input,#contactform textarea{
     border-radius: 10px;
+    border: 2px solid var(--back-color);
 }
 
 #contactform button{
     float: right;
     background-color: rgb(158, 166, 173);
     margin: 2%;
+    font-weight: 500;
+    color: var(--back-color);
+    text-transform: uppercase;
 }
 
 .main {

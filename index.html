@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible"  content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="./module/bootstrap/css/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,9 +19,9 @@
         </a>
         <div class="secondnav nav">
             <div class="side">
-                <a href="">About me</a>
-                <a href="">PROJECT</a>
-                <a class="formdisplay">Contact me</a>
+                <a href="#aboutme">About me</a>
+                <a href="./public/pages/project.html">PROJECT</a>
+                <a class="formdisplay">Contact</a>
             </div>
         </div>
     </div>
@@ -30,34 +30,37 @@
     </p>
     <div class="dosocial">
         <p class=" icon ">
-            <a href="#" class="fa fa-github"><span class="social">Github</span></a>
+            <a href="https://github.com/harshrastogi15" class="fa fa-github"><span class="social">Github</span></a>
         </p>
         <p class=" icon">
-            <a href="#" class="fa fa-linkedin"><span class="social">Linkedin</span></a>
+            <a href="https://www.linkedin.com/in/harsh-rastogi-114962200" class="fa fa-linkedin"><span class="social">Linkedin</span></a>
         </p>
         <p class="icon">
-            <a href="#" class=" fa fa-instagram"><span class="social">Instagram</span></a>
+            <a href="https://twitter.com/Harshrastogi00?s=08" class=" fa fa-twitter"><span class="social">Twitter</span></a>
         </p>
         <p class="icon">
-            <a href="#" class=" fa fa-facebook"><span class="social">Facebook</span></a>
+            <a href="https://www.instagram.com/harsh_rastogi_12/?hl=en" class=" fa fa-instagram"><span class="social">Instagram</span></a>
+        </p>
+        <p class="icon">
+            <a href="https://www.facebook.com/people/Harsh-Rastogi/100058566519618/" class=" fa fa-facebook"><span class="social">Facebook</span></a>
         </p>
     </div>
-    <!-- main  -->
     <div id="contactform">
         <div class="card-body">
             <span class="cut">
                 <i class="fa fa-times" onclick="dnone()"></i>
             </span>
-            <form>
+            <h4>Fill the Form</h4>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScvrfVZJK0N7dcXya4YF6fhajjFncqJ9sgjwoVzIeLZbADbuQ/formResponse?usp=sf_link"  enctype="text/plain" target="hidden_iframe" >
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+                    <input type="text" name="entry.491806637" class="form-control" placeholder="First name" aria-label="First name" required>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                    <input type="email" name="entry.524170329" class="form-control" id="exampleInputEmail1" placeholder="Email"
                         aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" placeholder="Message" id="floatingTextarea2"
+                    <textarea class="form-control" name="entry.1006936654" placeholder="Message" id="floatingTextarea2"
                         style="height: 100px; resize: none;"></textarea>
                 </div>
                 <div class="mb-3 form-check">
@@ -66,9 +69,10 @@
                 </div>
                 <button type="submit" class="btn">Submit</button>
             </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </div>
     </div>
-    <div class=" main container-fluid">
+    <div class=" main container-fluid" name="aboutme">
         <div class="sectionA container">
             <div class="animation-box">
                 <h3>Hello , everyone I am HARSH RASTOGI</h3>
@@ -79,7 +83,7 @@
                 </div>
             </div>
             <div class="headsvg">
-                <img src="./public/images/IMG.jpg" alt="" height="300px" width="300px">
+                <img src="./public/images/main.jpg" alt="" height="300px" width="300px">
             </div>
         </div>
         <div class="sectionB container">
@@ -160,10 +164,10 @@
         <div class="sec1 ">
             <h1>Projects</h1>
             <p class="projectlink">
-                <a href="https://harshrastogi15.github.io/portfolio/note/note.html">HR NOTE</a>
+                <a href="./public/pages/project.html#hrnote">HR NOTE</a>
             </p>
             <p class="projectlink">
-                <a href="https://harshrastogi15.github.io/portfolio/color_game/color_game.html">Color game</a>
+                <a href="./public/pages/project.html#colorgame">Color game</a>
             </p>
             <p class="projectlink">
                 <a href="https://harshrastogi15.github.io/portfolio/calculator/cal.html">Calculator</a>
@@ -172,7 +176,7 @@
                 <a href="https://harshrastogi15.github.io/portfolio/ToDolist/todo.html">ToDo list</a>
             </p>
             <p class="projectlink">
-                <a href="https://harshrastogi15.github.io/portfolio/soundfun/soundfun.html">Sound Fun</a>
+                <a href="./public/pages/project.html#sound">Sound Fun</a>
             </p>
         </div>
         <div class="sec2">
@@ -192,9 +196,8 @@
             <h6>Copyright reserved Harsh2021@</h6>
         </div>
     </div>
-    <!-- <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script> -->
     <script type="text/javascript" src="./module/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./public/js/main.js"></script>
 </body>
 
 </html>
