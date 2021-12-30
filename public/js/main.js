@@ -1,6 +1,8 @@
 var ro = document.querySelector(':root');
 var mode= document.querySelector(".mode");
 var form= document.querySelector(".formdisplay");
+var formbutton= document.querySelector(".contactbutton");
+var formclick= document.querySelector(".contactclick");
 var contactform= document.getElementById("contactform");
 
 mode.addEventListener('click',()=>{
@@ -14,7 +16,16 @@ mode.addEventListener('click',()=>{
     }
 });
 
+
 form.addEventListener('click',()=>{
+    contactform.style.display="block";
+});
+
+formbutton.addEventListener('click',()=>{
+    contactform.style.display="block";
+});
+
+formclick.addEventListener('click',()=>{
     contactform.style.display="block";
 });
 
@@ -25,6 +36,7 @@ function dnone(){
 var form = document.querySelector('form');
 
 form.addEventListener('submit',()=>{
+    alert("Thanks for filling the form.\nwe communicate soon by harshrastogi172000@gmail.com");
     contactform.style.display="none";
     location.reload();
 

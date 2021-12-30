@@ -40,6 +40,7 @@
 }
 
 .secondnav .side a {
+    text-transform: capitalize;
     font-size: 15px;
     font-weight: 500;
     /* color: white; */
@@ -189,6 +190,10 @@
     text-transform: uppercase;
 }
 
+#contactform label{
+    color: var(--back-color);
+}
+
 .main {
     margin-top: 70px;
     /* height: fit-content; */
@@ -210,10 +215,17 @@
     margin: auto;
 }
 
+.animation-box h3{
+    font-size: 20px;
+}
+
+.animation-box h3 span{
+    font-size: 26px;
+}
+
 .animation{
     align-items: center;
-    /* height: 50px; */
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .animated-item{
@@ -261,9 +273,24 @@
     }
 }
 
+.contactbutton{
+    color: black;
+    font-size: 20px;
+    background-color: rgb(158, 166, 173);
+    width: fit-content;
+    padding: 2%;
+    border: 2px solid rgb(158, 166, 173);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contactbutton:hover{
+    color: white;
+}
+
 .headsvg {
     float: right;
-    border: 3px solid black;
+    border: 3px solid --back-color;
     width: 300px;
     height: 300px;
     border-radius: 250px;
@@ -328,6 +355,25 @@
     margin: auto;
 }
 
+.edudesign .inwhat span{
+    font-size:20px;
+    /* float: left; */
+    font-weight: 800;
+}
+
+.edudesign .inwhat span p{
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.edudesign .inwhat p{
+    font-size: 14px;
+    font-weight: normal;
+    clear: both;
+    text-transform: initial;
+}
+
 .line{
     width: 10px;
 }
@@ -359,7 +405,7 @@
     margin: 3% auto;
 }
 
-.footer .sec1,.sec2,.sec3{
+.footer .sec1,.sec2{
     clear: both;
     width: 80%;
     height: fit-content;
@@ -397,18 +443,19 @@
     padding:2% 20%;
 }
 
-.contact{
-    float: right;
-    text-decoration: none;
+.sec2 p{
+    margin: auto;
+    width: fit-content;
+    margin-top: 2%;
+    font-size: 20px;
+} 
+
+.sec2 p .contactclick{
+    cursor: pointer;
 }
 
-.contact .fa{
-    font-size: 20px;
-    margin: 2% auto;
-    float:right;
-    color: var(--main-color);
-    text-decoration: none;
-    padding: 2%;
+.contactclick:hover{
+    color: rgb(181, 181, 223);
 }
 
 .sec3 h6{
@@ -435,6 +482,7 @@
     #contactform{
         width: 40%;
         left: 10%;
+        right: 10%;
     }
 }
 
@@ -443,6 +491,16 @@
         width: 100%;
     }
     #contactform{
-        width: 60%;
+        width: 50%;
+        left: 10%;
+        right: 10%;
+    }
+}
+
+@media (max-width:578px) {
+    #contactform{
+        width: 70%;
+        left: 10%;
+        right: 10%;
     }
 }
