@@ -70,34 +70,38 @@
                     <textarea class="form-control" name="entry.1006936654" placeholder="Message" id="floatingTextarea2"
                         style="height: 100px; resize: none;"></textarea>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                    <label class="form-check-label" for="exampleCheck1"></label>
-                </div>
                 <button type="submit" class="btn">Submit</button>
             </form>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </div>
     </div>
     <div class=" main container-fluid" name="aboutme">
-        <div class="sectionA container">
-            <div class="animation-box">
-                <h3>Hello , everyone I am <span> HARSH RASTOGI</span></h3>
-                <div class="animation">
-                    <p class="animated-item">Student at IIIT, BHAGALPUR ,</p>
-                    <p class="animated-item">WEB DEVELOPER ,</p>
-                    <p class="animated-item">Technophile ,</p>
+        <div class="sectionA container row mx-5 my-5">
+            <div class="animation-box col-md-6 col-12 mx-auto">
+                <h3>Hello , everyone I am HARSH RASTOGI</h3>
+                <div class="ani">
+                    <div class='console-container'>
+                        <span id='text'></span>
+                        <div class='console-underscore' id='console'>&#95;</div>
+                    </div>
                 </div>
+                <p>
+                    Learning and developing in the field of web development
+                </p>
                 <h6 class="contactbutton">
                     Contact me
                 </h6>
             </div>
-            <div class="headsvg">
-                <img src="./public/images/main.jpg" alt="" height="300px" width="300px">
+            <div class="col-md-6 col-12 mx-auto">
+                <div class="headsvg mx-auto">
+
+                    <img class="mx-auto" src="./public/images/main.jpg" alt="" height="300px" width="300px">
+                </div>
+                <!-- <iframe src="./public/images/main.jpg" ></iframe> -->
             </div>
         </div>
-        <div class="sectionB container">
-            <div class="skills float-lg-start">
+        <div class="sectionB container row mx-5">
+            <div class="skills col-md-6 col-12 mx-auto">
                 <h1>SKILLS</h1>
                 <table class="prdesign">
                     <tr>
@@ -134,7 +138,7 @@
                     </tr>
                     <tr>
                         <td class="progs">
-                            <p>50%</p>
+                            <p>40%</p>
                         </td>
                         <td class="line"></span></td>
                         <td class="inwhat">
@@ -159,7 +163,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="skills float-lg-end">
+            <div class="skills col-md-6 col-12 mx-auto">
                 <h1>EDUCATION</h1>
                 <table class="edudesign">
                     <tr>
@@ -212,7 +216,7 @@
         </div>
     </div>
     </div>
-    <div class="footer container-fluid">
+    <div class="footer container">
         <div class="sec1 ">
             <h1>PROJECTS</h1>
             <p class="projectlink">
@@ -235,11 +239,12 @@
             <p>Interested to work together? Let's talk : <span class="contactclick">Click here</span> </p>
         </div>
     </div>
-    <div class="sec3">
-        <h6>Copyright reserved Harsh2021@</h6>
+    <div class="sec3 my-4">
+        <h6><i class="fa fa-copyright"></i>HARSH RASTOGI</h6>
     </div>
     <script type="text/javascript" src="./module/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./public/js/main.js"></script>
+    <script type="text/javascript" src="./public/js/ani.js"></script>
 </body>
 
 </html>

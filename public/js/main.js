@@ -6,13 +6,13 @@ var formclick= document.querySelector(".contactclick");
 var contactform= document.getElementById("contactform");
 
 mode.addEventListener('click',()=>{
-    if(ro.style.getPropertyValue('--back-color')=='rgb(255, 255, 255)'){
-        ro.style.setProperty('--main-color', 'rgb(255, 255, 255)');
-        ro.style.setProperty('--back-color', 'rgb(51, 52, 53)');
-    }
-    else{
+    if(ro.style.getPropertyValue('--back-color')=='rgb(51, 52, 53)'){
         ro.style.setProperty('--main-color', 'rgb(83, 88, 92)');
         ro.style.setProperty('--back-color', 'rgb(255, 255, 255)');
+    }
+    else{
+        ro.style.setProperty('--main-color', 'rgb(255, 255, 255)');
+        ro.style.setProperty('--back-color', 'rgb(51, 52, 53)');
     }
 });
 
@@ -41,3 +41,5 @@ form.addEventListener('submit',()=>{
     location.reload();
 
 });
+
+
