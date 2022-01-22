@@ -9,13 +9,32 @@ mode.addEventListener('click',()=>{
     if(ro.style.getPropertyValue('--back-color')=='rgb(51, 52, 53)'){
         ro.style.setProperty('--main-color', 'rgb(83, 88, 92)');
         ro.style.setProperty('--back-color', 'rgb(255, 255, 255)');
+        mode.children[0].className="fa fa-toggle-off";
     }
     else{
         ro.style.setProperty('--main-color', 'rgb(255, 255, 255)');
         ro.style.setProperty('--back-color', 'rgb(51, 52, 53)');
+        mode.children[0].className="fa fa-toggle-on";
     }
 });
 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navscroll").style.position = "fixed";
+    document.getElementById("navscroll").style.borderBottom = "1px solid rgb(158, 166, 173)";
+    document.getElementById("navscroll").style.zIndex = "2";
+    
+} 
+else {
+    document.getElementById("navscroll").style.position = "relative";
+    document.getElementById("navscroll").style.backgroundColor = "var(--back-color)";
+    document.getElementById("navscroll").style.borderBottom = "0px solid rgb(158, 166, 173)";
+    document.getElementById("navscroll").style.zIndex = "0";
+  }
+}
 
 form.addEventListener('click',()=>{
     contactform.style.display="block";

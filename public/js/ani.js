@@ -8,7 +8,7 @@ function consoleText(words, id, colors) {
   var letterCount = 1;
   var x = 1;
   var waiting = false;
-  var target = document.getElementById(id)
+  var target = document.getElementById(id);
   target.setAttribute('style', 'color:' + colors[0])
   window.setInterval(function() {
     if (letterCount === 0 && waiting === false) {

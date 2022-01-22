@@ -13,40 +13,49 @@
 </head>
 
 <body class="completebody">
-    <div class="navbar navcursur">
-        <a class=" navHead">
+    <div class="navbar navbar-expand-lg navcursur d-flex justify-content-between" id="navscroll">
+        <a class="navHead">
             <span>HARSH RASTOGI</span>
         </a>
-        <div class="secondnav nav">
-            <div class="side">
-                <a href="#aboutme">About me</a>
-                <a href="./pages/project.html">Project</a>
-                <a class="formdisplay">Contact</a>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-align-justify"></span>
+        </button>
+        <div class="secondnav collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="side navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#aboutme">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/project.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Achievement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link formdisplay">Contact</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <p class="mode icon ">
-        <a class="fa fa-adjust"><span class="social">Mode</span></a>
+    <p class="mode">
+        <a class="fa fa-toggle-off"></a>
     </p>
     <div class="dosocial">
         <p class=" icon ">
-            <a href="https://github.com/harshrastogi15" class="fa fa-github"><span class="social">Github</span></a>
+            <a href="https://github.com/harshrastogi15" class="fa fa-github"></a>
         </p>
         <p class=" icon">
-            <a href="https://www.linkedin.com/in/harsh-rastogi-114962200" class="fa fa-linkedin"><span
-                    class="social">Linkedin</span></a>
+            <a href="https://www.linkedin.com/in/harsh-rastogi-114962200" class="fa fa-linkedin"></a>
         </p>
         <p class="icon">
-            <a href="https://twitter.com/Harshrastogi00?s=08" class=" fa fa-twitter"><span
-                    class="social">Twitter</span></a>
+            <a href="https://twitter.com/Harshrastogi00?s=08" class=" fa fa-twitter"></a>
         </p>
         <p class="icon">
-            <a href="https://www.instagram.com/harsh_rastogi_12/?hl=en" class=" fa fa-instagram"><span
-                    class="social">Instagram</span></a>
+            <a href="https://www.instagram.com/harsh_rastogi_12/?hl=en" class=" fa fa-instagram"></a>
         </p>
         <p class="icon">
-            <a href="https://www.facebook.com/people/Harsh-Rastogi/100058566519618/" class=" fa fa-facebook"><span
-                    class="social">Facebook</span></a>
+            <a href="https://www.facebook.com/people/Harsh-Rastogi/100058566519618/" class=" fa fa-facebook"></a>
         </p>
     </div>
     <div id="contactform">
@@ -76,7 +85,7 @@
         </div>
     </div>
     <div class=" main container-fluid" name="aboutme">
-        <div class="sectionA container row mx-5 my-5">
+        <div class="sectionA row mx-5 my-5">
             <div class="animation-box col-md-6 col-12 mx-auto">
                 <h3>Hello , everyone I am HARSH RASTOGI</h3>
                 <div class="ani">
@@ -94,13 +103,11 @@
             </div>
             <div class="col-md-6 col-12 mx-auto">
                 <div class="headsvg mx-auto">
-
-                    <img class="mx-auto" src="./public/images/main.jpg" alt="" height="300px" width="300px">
+                    <img src="./public/images/main.jpg" alt="" height="100%" width="100%">
                 </div>
-                <!-- <iframe src="./public/images/main.jpg" ></iframe> -->
             </div>
         </div>
-        <div class="sectionB container row mx-5">
+        <div class="sectionB container row mx-auto">
             <div class="skills col-md-6 col-12 mx-auto">
                 <h1>SKILLS</h1>
                 <table class="prdesign">
@@ -170,7 +177,8 @@
                         <td class="line2"></td>
                         <td class="line3"><span class="fa fa-caret-right"></span></td>
                         <td class="inwhat">
-                            <span>B.tech. <p>Computer Science and Engineering</p></span>
+                            <h5>B.tech.</h5>
+                            <h6>Computer Science and Engineering</h6>
                             <p>
                                 Currently I'm Pursuing my B.Tech Degree from Indian Institute of Information
                                 Technology, Bhagalpur.
@@ -186,7 +194,8 @@
                         <td class="line2"></td>
                         <td class="line3"><span class="fa fa-caret-right"></span></td>
                         <td class="inwhat">
-                            <span>12th <p>Science</p></span>
+                            <h5>12th</h5>
+                            <h6>Science</h6>
                             <p>
                                 I completed my 12th from Anglo Sanskrit Inter College, Mawana (Meerut).
                             </p>
@@ -201,7 +210,7 @@
                         <td class="line2"></td>
                         <td class="line3"><span class="fa fa-caret-right"></span></td>
                         <td class="inwhat">
-                            <span>10th</span>
+                            <h6>10th</h6>
                             <p>
                                 I completed my 10th from Saraswati Vidya Mandir School, Mawana (Meerut).
                             </p>
@@ -211,10 +220,6 @@
 
             </div>
         </div>
-        <div class="sectionC container">
-
-        </div>
-    </div>
     </div>
     <div class="footer container">
         <div class="sec1 ">
