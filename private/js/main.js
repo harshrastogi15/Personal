@@ -25,6 +25,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navscroll").style.position = "fixed";
     document.getElementById("navscroll").style.borderBottom = "1px solid rgb(158, 166, 173)";
+    document.getElementById("navscroll").style.backgroundColor = "var(--back-color)";
     document.getElementById("navscroll").style.zIndex = "2";
     
 } 
