@@ -10,12 +10,16 @@
   background-color: var(--back-color);
   width: 100%;
   color: var(--main-color);
-  /* margin-top: 54px; */
+  margin-top: 120px;
 }
 
 #navscroll {
   top: 0;
   width: 100%;
+  position: fixed;
+  background-color: var(--back-color);
+  z-index: 2;
+  padding-top: 5px;
 }
 
 .navcursur {
@@ -206,11 +210,6 @@
   color: var(--back-color);
 }
 
-.main {
-  margin-top: 70px;
-  /* height: fit-content; */
-  width: max-content;
-}
 
 .animation-box {
   align-items: center;
@@ -300,7 +299,7 @@
 }
 
 .skills {
-  width: 100%;
+  /* width: 100%; */
   /* height: fit-content; */
   /* text-align: center; */
   margin: auto;
