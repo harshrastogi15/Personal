@@ -3,6 +3,22 @@
     --back-color:rgb(51, 52, 53); */
   --main-color: rgb(83, 88, 92);
   --back-color: rgb(255, 255, 255);
+  --special-color:rgb(164, 175, 187);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--special-color); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-color); 
+  border-radius: 3px;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .completebody {
@@ -22,10 +38,16 @@
   padding-top: 5px;
 }
 
+.navbar-toggler{
+  color: var(--main-color);
+}
+
 .navcursur {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .navbar {
   padding-top: 0;
@@ -43,8 +65,6 @@
 }
 
 .navHead:hover {
-  /* color: rgb(181, 181, 223); */
-  /* color: rgb(135, 113, 195); */
   color: rgb(164, 175, 187);
 }
 
@@ -55,21 +75,58 @@
 }
 
 .side{
-  width: fit-content;
+  /* width: fit-content; */
   margin: auto;
 }
 
 .secondnav .side a {
-  text-transform: capitalize;
+  cursor: pointer;
+  text-transform: uppercase;
   font-size: 15px;
   font-weight: 500;
   color: var(--main-color);
   text-decoration: none;
-  margin-right: 40px;
+  margin: auto 20px;
+  padding: 0px 0px;
+  position: relative;
+  opacity: .5;
 }
 
-.secondnav .side a:hover {
+/* .secondnav .side a:hover {
   color: rgb(158, 166, 173);
+} */
+
+.secondnav .side a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 1px solid var(--main-color);
+  width: 0%;
+  opacity: 0;
+}
+
+.secondnav .side a:hover{
+  opacity: 1;
+  color: var(--main-color);
+}
+
+.secondnav .side a:hover::before{
+  animation-name: navanima;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes navanima {
+    from{
+      opacity: 1;
+      width: 0%;
+    }to{
+      opacity: 1;
+      width: 100%;
+    }
 }
 
 .mode {
@@ -218,7 +275,6 @@
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
-  padding: 20px;
 }
 
 .animation-box h3 {
@@ -247,8 +303,6 @@
   font-size: 2em;
   font-weight: 500;
   text-align: center;
-  /* height:200px; */
-  /* width:600px; */
   display: block;
   position: relative;
   color: white;
@@ -289,21 +343,12 @@
 }
 
 .headsvg {
-  /* border: 3px solid var(--back-color); */
   width: 300px;
   height: 300px;
   border-radius: 250px;
-  /* align-items: center; */
-  /* margin: auto 5px; */
   overflow: hidden;
 }
 
-.skills {
-  /* width: 100%; */
-  /* height: fit-content; */
-  /* text-align: center; */
-  margin: auto;
-}
 
 .skills h1 {
   margin: auto 10% 5% 10%;
@@ -312,15 +357,10 @@
 .prdesign,
 .edudesign {
   align-items: center;
-  /* width: 100%; */
-  /* height: fit-content; */
   margin: auto 10%;
   min-height: 400px;
 }
 
-/* .edudesign {
-  margin: auto 18%;
-} */
 
 .nonprogs {
   width: 80px;
@@ -354,6 +394,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 .inwhat p {
   margin: auto 16px;
@@ -454,8 +496,8 @@
 .projectlink a {
   color: var(--main-color);
   text-decoration: none;
-  width: 100%;
-  padding: 1%;
+  /* width: 100%; */
+  padding: 2% 20%;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -464,7 +506,7 @@
 .projectlink a:hover {
   background-color: var(--main-color);
   color: var(--back-color);
-  padding: 2% 20%;
+  /* padding: 2% 20%; */
 }
 
 .sec2 p {
@@ -479,7 +521,7 @@
 }
 
 .contactclick:hover {
-  color: rgb(181, 181, 223);
+  color: var(--special-color);
 }
 
 .sec3 h6 {
@@ -515,12 +557,11 @@
 
 @media (max-width:768px) {
   .secondnav .side a {
-    width: 100%;
-    text-transform: capitalize;
     font-size: 15px;
     font-weight: 500;
     color: var(--main-color);
     text-decoration: none;
+    text-align: center;
   }
   .certifacteimg{
     width: 80%;

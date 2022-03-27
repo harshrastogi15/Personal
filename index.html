@@ -23,14 +23,14 @@
         </button>
         <div class="secondnav collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="side navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#aboutme">About me</a>
+                <li class="nav-item ">
+                    <a class="nav-link" aria-current="page" onclick='scrollview("aboutme")'>About me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/project.html">Project</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#achievement">Achievement</a>
+                    <a class="nav-link"  onclick='scrollview("achievement")'>Achievement</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link formdisplay">Contact</a>
@@ -63,7 +63,7 @@
             <span class="cut">
                 <i class="fa fa-times" onclick="dnone()"></i>
             </span>
-            <h4>Fill the Form</h4>
+            <h4>Contact Information</h4>
             <form
                 action="https://docs.google.com/forms/d/e/1FAIpQLScvrfVZJK0N7dcXya4YF6fhajjFncqJ9sgjwoVzIeLZbADbuQ/formResponse?usp=sf_link"
                 enctype="text/plain" target="hidden_iframe">
@@ -84,9 +84,8 @@
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </div>
     </div>
-    <div class="container-fluid">
-        <a name="aboutme"></a>
-        <div class="sectionA row mx-5 my-5">
+    <div class="container-fluid" id="aboutme">
+        <div class="sectionA row g-0 mx-5 my-5">
             <div class="animation-box col-md-6 col-12 mx-auto">
                 <h3>Hello everyone, I am HARSH RASTOGI</h3>
                 <div class="ani">
@@ -221,8 +220,7 @@
 
             </div>
         </div>
-        <div class="container">
-            <a name="achievement"></a>
+        <div class="container" id="achievement">
             <h1 class="text-center">ACHIEVEMENT</h1>
             <div class="d-md-flex justify-content-md-around">
                 <div class="certifacteimg">
@@ -239,7 +237,7 @@
     <div class="footer container">
         <div class="sec1">
             <h1>PROJECTS</h1>
-            <div class="row text-center my-3">
+            <div class="row text-center my-3 justify-content-md-around">
                 <p class="col-md-4 col-12 projectlink">
                     <a href="./pages/project.html#hrnote">HR NOTE</a>
                 </p>
@@ -250,17 +248,17 @@
                     <a href="./pages/project.html#bracket">Bracket Solver</a>
                 </p>
             </div>
-            <div class="row text-center my-3">
-            <p class="col-md-6 col-12 projectlink">
+            <div class="row text-center my-3 justify-content-md-around">
+            <p class="col-md-4 col-12 projectlink">
                 <a href="./pages/project.html#todo">ToDo list</a>
             </p>
-            <p class="col-md-6 col-12 projectlink">
+            <p class="col-md-4 col-12 projectlink">
                 <a href="./pages/project.html#sound">Sound Fun</a>
             </p>
             </div>
         </div>
         <div class="sec2">
-            <p>Interested to work together? Let's talk : <span class="contactclick">Click here</span> </p>
+            <p>Interested to work together? <span class="contactclick">Let's talk</span> </p>
         </div>
     </div>
     <div class="sec3 my-4">

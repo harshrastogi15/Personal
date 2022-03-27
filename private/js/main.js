@@ -56,3 +56,13 @@ form.addEventListener('submit',()=>{
 });
 
 
+// scrollview
+
+function scrollview(e){
+
+    const element = document.getElementById(e);
+    element.scrollIntoView();
+}
+
+
+
