@@ -1,32 +1,33 @@
 :root {
-  /* --main-color:rgb(255, 255, 255);
-    --back-color:rgb(51, 52, 53); */
-  --main-color: rgb(83, 88, 92);
+  /* --main-color: rgb(83, 88, 92); */
+  --main-color: rgb(41, 49, 27);
   --back-color: rgb(255, 255, 255);
-  --special-color:rgb(164, 175, 187);
+  --special-color: rgb(164, 175, 187);
+  --hover-color:rgb(47, 68, 78);
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--special-color); 
+  box-shadow: inset 0 0 5px var(--special-color);
 }
+
 ::-webkit-scrollbar-thumb {
-  background: var(--main-color); 
+  background: var(--main-color);
   border-radius: 3px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 .completebody {
-  /* background-color: white; */
   background-color: var(--back-color);
   width: 100%;
   color: var(--main-color);
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 
 #navscroll {
@@ -38,7 +39,7 @@ html{
   padding-top: 5px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   color: var(--main-color);
 }
 
@@ -47,8 +48,6 @@ html{
   align-items: center;
 }
 
-
-
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -56,7 +55,8 @@ html{
 
 .navHead {
   color: var(--main-color);
-  font-weight: 500;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 24px;
   align-items: center;
   text-decoration: none;
@@ -65,7 +65,7 @@ html{
 }
 
 .navHead:hover {
-  color: rgb(164, 175, 187);
+  color: var(--hover-color);
 }
 
 .secondnav {
@@ -74,44 +74,49 @@ html{
   align-items: center;
 }
 
-.side{
+.side {
   /* width: fit-content; */
   margin: auto;
+}
+
+.secondnav .side {
+  font-weight: 700;
 }
 
 .secondnav .side a {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 500;
+  /* font-weight: 1,700; */
   color: var(--main-color);
   text-decoration: none;
   margin: auto 20px;
   padding: 0px 0px;
   position: relative;
-  opacity: .5;
+  opacity: .6;
 }
 
 /* .secondnav .side a:hover {
   color: rgb(158, 166, 173);
 } */
 
-.secondnav .side a::before{
+.secondnav .side a::before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  border: 1px solid var(--main-color);
+  border-top: 2px solid var(--main-color);
   width: 0%;
+  height: 0px;
   opacity: 0;
 }
 
-.secondnav .side a:hover{
+.secondnav .side a:hover {
   opacity: 1;
   color: var(--main-color);
 }
 
-.secondnav .side a:hover::before{
+.secondnav .side a:hover::before {
   animation-name: navanima;
   animation-duration: 1.5s;
   animation-direction: alternate;
@@ -120,13 +125,15 @@ html{
 }
 
 @keyframes navanima {
-    from{
-      opacity: 1;
-      width: 0%;
-    }to{
-      opacity: 1;
-      width: 100%;
-    }
+  from {
+    opacity: 1;
+    width: 0%;
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
+  }
 }
 
 .mode {
@@ -145,7 +152,7 @@ html{
   transition: .5s ease-in-out;
 }
 
-.mode .fa{
+.mode .fa {
   text-align: center;
   text-decoration: none;
   color: black;
@@ -162,10 +169,12 @@ html{
   width: fit-content;
   z-index: 10;
 }
-.mode .fa-toggle-off{
+
+.mode .fa-toggle-off {
   color: white;
 }
-.mode .fa-toggle-on{
+
+.mode .fa-toggle-on {
   color: black;
 }
 
@@ -190,7 +199,7 @@ html{
   padding: 3px 5px 3px 20px;
 }
 
-.icon:hover .fa-github{
+.icon:hover .fa-github {
   color: white;
   transform: scale(1.2);
 }
@@ -199,6 +208,7 @@ html{
   color: rgb(18, 52, 243);
   transform: scale(1.2);
 }
+
 .icon:hover .fa-linkedin {
   color: rgb(80, 116, 233);
   transform: scale(1.2);
@@ -245,6 +255,7 @@ html{
 
 .cut .fa {
   float: right;
+  cursor: pointer;
   margin: 2%;
 }
 
@@ -267,30 +278,42 @@ html{
   color: var(--back-color);
 }
 
+.sectionA {
+  padding-top: 50px;
+  height: calc(100vh - 100px);
+}
+
 
 .animation-box {
-  align-items: center;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100%;
+  padding-left: 50px;
+  text-align: left;
 }
 
 .animation-box h3 {
-  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
   width: 100%;
   margin: auto;
   padding: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+}
+
+.animation-box .title{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.animation-box .title span{
+  margin: auto 5px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .ani {
   clear: both;
   width: 100%;
-  height: 82px;
+  height: 90px;
   margin: 0;
 }
 
@@ -300,9 +323,8 @@ html{
 
 .console-container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2em;
-  font-weight: 500;
-  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
   display: block;
   position: relative;
   color: white;
@@ -312,6 +334,7 @@ html{
   right: 0;
   margin: auto;
 }
+
 .console-underscore {
   color: var(--main-color);
   display: inline-block;
@@ -322,30 +345,18 @@ html{
 
 .animation-box p {
   width: 100%;
+}
+
+#image {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-}
-
-.contactbutton {
-  color: black;
-  font-size: 20px;
-  background-color: rgb(158, 166, 173);
-  width: fit-content;
-  padding: 2%;
-  border: 2px solid rgb(158, 166, 173);
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.contactbutton:hover {
-  color: white;
+  align-items: center;
 }
 
 .headsvg {
   width: 300px;
-  height: 300px;
-  border-radius: 250px;
+  height: 400px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -397,6 +408,7 @@ html{
   align-items: center;
   margin: 0;
 }
+
 .inwhat p {
   margin: auto 16px;
 }
@@ -450,13 +462,13 @@ html{
   /* width: 20px; */
 }
 
-.certifacteimg{
+.certifacteimg {
   width: 300px;
   height: 200px;
   margin: 30px auto;
 }
 
-.certifacteimg img{
+.certifacteimg img {
   border-style: inset;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -464,12 +476,12 @@ html{
   height: 80%;
 }
 
-.certifacteimg p{
+.certifacteimg p {
   width: fit-content;
   text-align: center;
 }
 
-.certifacteimg p span{
+.certifacteimg p span {
   font-weight: 800;
 }
 
@@ -540,6 +552,7 @@ html{
     width: 100%;
     margin: 10% auto;
   }
+
   #contactform {
     width: 40%;
     left: 10%;
@@ -563,10 +576,21 @@ html{
     text-decoration: none;
     text-align: center;
   }
-  .certifacteimg{
+
+  .certifacteimg {
     width: 80%;
     height: 250px;
   }
+
+  .sectionA{
+    height: fit-content;
+  }
+
+  .animation-box {
+    /* text-align: center; */
+    padding-left: 0px;
+  }
+
 }
 
 @media (max-width: 578px) {

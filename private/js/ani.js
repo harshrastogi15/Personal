@@ -1,5 +1,5 @@
 
- consoleText(['Webdeveloper', 'Student at IIIT BH', 'Technophile'], 'text',['rgb(164, 175, 187)']);
+ consoleText(['Web Developer', 'Student at IIIT BH'], 'text',['rgb(47, 68, 78)']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
