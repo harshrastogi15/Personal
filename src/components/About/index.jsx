@@ -21,8 +21,8 @@ const AboutSection = () => {
               As a CodeForces Specialist and LeetCode enthusiast, I&apos;ve solved over 400 problems and participated in prestigious coding competitions. My coordination role at the Web Development Club has allowed me to enhance my skills while fostering a collaborative spirit.
             </p>
           </div>
-          <div className="md:w-1/2 h-80 md:h-80 lg:h-96">
-            <img src={profileImage} alt="Profile" className="w-full h-full rounded-lg md:rounded-full" />
+          <div className="md:w-1/2 h-80 md:h-80">
+            <img src={profileImage} alt="Profile" className="w-80 h-80 m-auto rounded-full" />
           </div>
         </div>
       </div>

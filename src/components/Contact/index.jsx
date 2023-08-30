@@ -1,11 +1,12 @@
 import React from 'react';
 import {FaLinkedin, FaInstagram, FaGithub, FaEnvelope, FaPhone} from 'react-icons/fa';
+import theme from '../../theme';
 
 const ContactSection = () => {
   return (
-    <section className="bg-gray-100 py-16" id='ContactSection'>
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-gray-800">
+    <section className={theme.typography.section.mainBlock} id='ContactSection'>
+      <div className={theme.typography.section.childBlock}>
+        <h2 className={theme.typography.heading}>
           Contact
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -36,7 +37,8 @@ const ContactSection = () => {
                 <FaGithub className="text-gray-600 hover:text-gray-800" />
               </a>
             </div>
-            <div className="mt-4">
+            <h3 className="text-lg font-semibold mb-2 mt-2 text-gray-800">Profile</h3>
+            <div className="">
               <a href="https://codeforces.com/profile/yourusername" target="_blank" rel="noopener noreferrer">
                 Codeforces
               </a>

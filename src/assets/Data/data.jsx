@@ -31,3 +31,21 @@ export const achievements = [
     link: url + '/Harsh_Rastogi.png',
   },
 ];
+
+export const projects = [
+  {
+    title: 'Project 1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: url,
+    link: 'https://project1-demo.com',
+    githubLink: 'https://github.com/yourusername/project2',
+  },
+  {
+    title: 'Project 2',
+    description: 'Praesent tincidunt justo in nisl congue, non vestibulum ex venenatis.',
+    image: url,
+    link: 'https://project2-demo.com',
+    githubLink: 'https://github.com/yourusername/project2',
+  },
+
+];

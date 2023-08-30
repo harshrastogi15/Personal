@@ -1,10 +1,11 @@
 import React from 'react';
+import theme from '../../theme';
 
 const Resume = () => {
   return (
-    <section className="bg-gray-100 py-16" id='ResumeSection'>
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-gray-800">
+    <section className={theme.typography.section.mainBlock} id='ResumeSection'>
+      <div className={theme.typography.section.childBlock}>
+        <h2 className={theme.typography.heading}>
           Resume
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -34,7 +35,7 @@ const Resume = () => {
           </div>
         </div>
         <div className="mt-8 text-center">
-          <a href="/path/to/your/resume.pdf" download className="px-6 py-3 rounded-full font-semibold bg-blue-500 text-white hover:bg-blue-600 transition duration-300 ease-in-out">
+          <a href="https://drive.google.com/file/d/1SuF9XmyKUjPkFEsUneiQORHybgqYFYC4/view" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full font-semibold bg-blue-500 text-white hover:bg-blue-600 transition duration-300 ease-in-out">
             Download Resume
           </a>
         </div>
