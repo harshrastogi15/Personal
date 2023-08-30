@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Personal/static/css/main.c7ce3fc3.css",
+    "main.js": "/Personal/static/js/main.e840bc8d.js",
+    "static/js/787.128fc6e9.chunk.js": "/Personal/static/js/787.128fc6e9.chunk.js",
+    "static/media/Harsh_Rastogi.png": "/Personal/static/media/Harsh_Rastogi.318da962b33e811eb241.png",
+    "index.html": "/Personal/index.html",
+    "main.c7ce3fc3.css.map": "/Personal/static/css/main.c7ce3fc3.css.map",
+    "main.e840bc8d.js.map": "/Personal/static/js/main.e840bc8d.js.map",
+    "787.128fc6e9.chunk.js.map": "/Personal/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7ce3fc3.css",
+    "static/js/main.e840bc8d.js"
+  ]
+}
