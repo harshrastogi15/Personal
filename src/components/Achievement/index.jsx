@@ -1,32 +1,38 @@
-import React from 'react';
-import trophyIcon from '../../assets/Image/Harsh_Rastogi.png';
+import React, {useState} from 'react';
+import {achievements} from '../../assets/Data/data';
+import theme from '../../theme';
 
 const AchievementSection = () => {
-  const achievements = [
-    {
-      title: 'Web Design Contest Winner',
-      year: '2022',
-    },
-    {
-      title: 'Front-End Development Award',
-      year: '2021',
-    },
-    {
-      title: 'Top Performer in UI/UX Design',
-      year: '2020',
-    },
-  ];
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
+
+  const handleCardHover = (index) => {
+    setHoveredIndex(index);
+  };
 
   return (
-    <section className="bg-gray-100 py-16" id='AchievementSection'>
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-gray-800">
+    <section className={theme.typography.section.mainBlock} id="AchievementSection">
+      <div className={theme.typography.section.childBlock}>
+        <h2 className={theme.typography.heading}>
           Achievements
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {achievements.map((achievement, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg p-6">
-              <img src={trophyIcon} alt="Trophy" className="w-12 h-12 mb-4 mx-auto" />
+            <div
+              key={index}
+              className={`bg-white shadow-md rounded-lg p-6 transition-transform duration-300 transform ${
+                hoveredIndex === index ? 'hover:scale-105 hover:-translate-y-2' : ''
+              }`}
+
+              onMouseEnter={() => handleCardHover(index)}
+              onMouseLeave={() => handleCardHover(-1)}
+            >
+              <div className="flex items-center justify-center mb-4">
+                {hoveredIndex === index ? (
+                  <img src={achievement.thumbnail} alt="Trophy" className="w-12 h-12 mx-auto" />
+                ) : (
+                  <span className="text-4xl w-12 h-12 mx-auto">🏆</span>
+                )}
+              </div>
               <h3 className="text-lg font-semibold mb-2 text-gray-800">{achievement.title}</h3>
               <p className="text-gray-600">{achievement.year}</p>
             </div>

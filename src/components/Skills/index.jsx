@@ -1,21 +1,11 @@
 import React from 'react';
-
+import theme from '../../theme';
+import {skills} from '../../assets/Data/data';
 const SkillsSection = () => {
-  const skills = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Tailwind CSS',
-    'Responsive Design',
-    'Git',
-    'UI/UX Design',
-  ];
-
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-gray-800">
+    <section className={theme.typography.section.mainBlock} id='SkillSection'>
+      <div className={theme.typography.section.childBlock}>
+        <h2 className={theme.typography.heading}>
           Skills
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
