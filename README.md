@@ -8,7 +8,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## Live Demo
 
-Check out the live version of my portfolio: [Live Demo](https://your-portfolio-live-link.com)
+Check out the live version of my portfolio: [Live](https://harshrastogi15.github.io/Personal/)
 
 ## Features
 
@@ -48,5 +48,3 @@ Check out the live version of my portfolio: [Live Demo](https://your-portfolio-l
 - React.js
 - Tailwind CSS
 - react-icons (for icons)
-
-
