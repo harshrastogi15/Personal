@@ -20,8 +20,8 @@ function App() {
       <Hero/>
       <About/>
       <Skills/>
-      <Achievement/>
       <Education/>
+      <Achievement/>
       <Project/>
       <Resume/>
       <CodingProfiles/>

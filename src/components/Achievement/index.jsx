@@ -33,8 +33,9 @@ const AchievementSection = () => {
                   <span className="text-4xl w-12 h-12 mx-auto">🏆</span>
                 )}
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-gray-800">{achievement.title}</h3>
-              <p className="text-gray-600">{achievement.year}</p>
+              <h3 className="text-lg font-semibold mb-2 text-center text-gray-800">{achievement.title}</h3>
+              <p className="text-md text-gray-600 text-center">{achievement.message}</p>
+              <p className="text-gray-600 text-center">{achievement.year}</p>
             </div>
           ))}
         </div>

@@ -1,35 +1,53 @@
-import url from '../Image/Harsh_Rastogi.png';
 
 export const skills = [
-  'HTML',
-  'CSS',
+  'C++',
+  'NodeJs',
   'JavaScript',
   'React',
+  'Python',
+  'Git/Github',
+  'MySql',
+  'MongoDB',
+  'HTML',
+  'CSS',
   'Tailwind CSS',
-  'Responsive Design',
-  'Git',
-  'UI/UX Design',
+  'Firebase',
 ];
+
+// Achievements
+import icpc from '../Image/icpc_logo.png';
+import kickStart from '../Image/kickStart.png';
 
 export const achievements = [
   {
-    title: 'Web Design Contest Winner',
+    title: 'Ranked 81 at ICPC Mathura-Kanpur Regional site 2022',
+    message: 'Amongst 150 teams across the country',
+    year: '2023',
+    thumbnail: icpc,
+    link: '',
+  },
+  {
+    title: 'Secured a slot at ICPC Mathura-Kanpur Regionals 2022',
+    message: 'AIR - 152 in preliminary round',
+    year: '2023',
+    thumbnail: icpc,
+    link: '',
+  },
+  {
+    title: 'Secured a slot at ICPC Amritapuri Regionals 2022',
+    message: 'AIR - 238 in preliminary round',
+    year: '2023',
+    thumbnail: icpc,
+    link: '',
+  },
+  {
+    title: 'Google Kickstart Round D 2022',
+    message: 'Secured Global rank 1137',
     year: '2022',
-    thumbnail: url,
-    link: url + '/Harsh_Rastogi.png',
+    thumbnail: kickStart,
+    link: '',
   },
-  {
-    title: 'Front-End Development Award',
-    year: '2021',
-    thumbnail: url,
-    link: url + '/Harsh_Rastogi.png',
-  },
-  {
-    title: 'Top Performer in UI/UX Design',
-    year: '2020',
-    thumbnail: url,
-    link: url + '/Harsh_Rastogi.png',
-  },
+
 ];
 
 // Project Links

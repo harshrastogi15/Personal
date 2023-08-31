@@ -10,6 +10,7 @@ const Navbar = () => {
   const sections = [
     {name: 'About', targetId: 'AboutSection'},
     {name: 'Project', targetId: 'ProjectSection'},
+    {name: 'Education', targetId: 'EducationSection'},
     {name: 'Achievement', targetId: 'AchievementSection'},
     {name: 'Resume', targetId: 'ResumeSection'},
     {name: 'Contact', targetId: 'ContactSection'},
@@ -65,9 +66,12 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div onTouchStart={(e) => enterLeave(e, 0)} onTouchEnd={(e) => enterLeave(e, 1)} className={`fixed inset-y-0 left-0 ${isOpen ? 'w-full' : 'w-0'} bg-gray-800 transition-all duration-300 ease-in-out md:hidden overflow-auto`} >
         <div className="px-4 py-6 space-y-3">
+          <div className="flex-shrink-0 text-white text-xl">
+            Harsh Rastogi
+          </div>
           {
             sections.map((e) => {
-              return <div key={e.targetId} onClick={()=>{
+              return <div key={e.targetId} onClick={() => {
                 scrollToSection(e.targetId); setIsOpen(false);
               }} className="block text-gray-300 hover:text-white transition duration-300 ease-in-out">
                 {e.name}
