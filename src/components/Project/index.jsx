@@ -11,11 +11,11 @@ const ProjectShowcase = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg p-6">
-              <img src={project.image} alt={project.title} className="mb-4 w-80 h-64 m-auto rounded-lg" />
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">{project.title}</h3>
-              <p className="text-gray-600 mb-4 overflow-auto h-20">{project.description}</p>
-              <div className="flex justify-between items-center">
+            <div key={index} className="bg-white shadow-md rounded-lg p-0 overflow-hidden">
+              <img src={project.image} alt={project.title} className="mb-4 w-80 h-64 m-auto " />
+              <h3 className="text-xl font-semibold mb-2 mx-2 text-gray-800">{project.title}</h3>
+              <p className="text-gray-600 mb-2 overflow-auto mx-2 h-20">{project.description}</p>
+              <div className="flex justify-between items-center m-2">
                 <a
                   href={project.link}
                   className="text-blue-500 hover:underline"

@@ -32,20 +32,48 @@ export const achievements = [
   },
 ];
 
+// Project Links
+import bookStore from '../Image/Book_store.png';
+import quiz from '../Image/Quiz.png';
+import textOnImage from '../Image/Text_On_Image.png';
+import bracketSolver from '../Image/Bracketsolver.png';
+import hrNote from '../Image/Hrnote.png';
+
 export const projects = [
   {
-    title: 'Project 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: url,
-    link: 'https://project1-demo.com',
-    githubLink: 'https://github.com/yourusername/project2',
+    title: 'BookStore',
+    description: 'A MERN stack project designed to provide a seamless book store experience. This app/website allows users to explore a wide range of books, read reviews, and contribute their own feedback to help fellow readers make informed choices.',
+    image: bookStore,
+    link: 'https://hr-book-store.vercel.app/',
+    githubLink: 'https://github.com/harshrastogi15/Book_Store',
   },
   {
-    title: 'Project 2',
-    description: 'Praesent tincidunt justo in nisl congue, non vestibulum ex venenatis.',
-    image: url,
-    link: 'https://project2-demo.com',
-    githubLink: 'https://github.com/yourusername/project2',
+    title: 'Quiz Platform',
+    description: 'Quiz Platform is a computer-based quiz test software designed to simplify the process of conducting quizzes.',
+    image: quiz,
+    link: ' ',
+    githubLink: 'https://github.com/harshrastogi15/examportal',
+  },
+  {
+    title: 'Text_On_Image',
+    description: 'This project is a simple certificate generator that takes a template certificate in PNG format, along with a CSV file containing names and IDs, and generates personalized certificates with the respective names and IDs.',
+    image: textOnImage,
+    link: ' ',
+    githubLink: 'https://github.com/harshrastogi15/Text_On_Image',
+  },
+  {
+    title: 'HR Bracket solver',
+    description: 'This calculator is designed to solve mathematical expressions based on the BODMAS rule, specifically focusing on solving brackets. It provides step-by-step methods to solve each bracket in an expression.',
+    image: bracketSolver,
+    link: 'https://harshrastogi15.github.io/Bodmas-Calculator/',
+    githubLink: 'https://github.com/harshrastogi15/Bodmas-Calculator',
+  },
+  {
+    title: 'HR Note',
+    description: 'It is a learning project. Its work to keep your note by javascript method and show it to your screen with that time at which you saved your note.',
+    image: hrNote,
+    link: 'https://harshrastogi15.github.io/Basic-Project/note/note.html',
+    githubLink: 'https://github.com/harshrastogi15/Basic-Project/tree/main/note',
   },
 
 ];
