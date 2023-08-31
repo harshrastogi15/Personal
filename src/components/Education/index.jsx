@@ -1,7 +1,7 @@
 import React from 'react';
 import theme from '../../theme';
 
-const Education = () => {
+const education = () => {
   return (
     <section className={theme.typography.section.mainBlock}>
       <div className={theme.typography.section.childBlock}>
@@ -29,4 +29,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default education;

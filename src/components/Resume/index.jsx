@@ -1,5 +1,6 @@
 import React from 'react';
 import theme from '../../theme';
+import {resume} from '../../assets/Data/data';
 
 const Resume = () => {
   return (
@@ -9,28 +10,44 @@ const Resume = () => {
           Resume
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="bg-white shadow-md rounded-lg p-4">
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Experience</h3>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Job Title - Company/Organization - Dates</li>
-              <li>Job Title - Company/Organization - Dates</li>
-
+              {resume.experience.map((e, idx) => {
+                return <li key={idx}>
+                  <span className='text-md text-gray-600 font-bold'>{e.name}</span>
+                  <p className='pl-6 text-gray-600'>{e.date}</p>
+                  <ul className="list-disc pl-6 list-inside text-gray-500">
+                    {e.responsibility.map((e, idx)=>{
+                      return <li key={idx}>{e}</li>;
+                    })}
+                  </ul>
+                </li>;
+              })}
             </ul>
           </div>
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="bg-white shadow-md rounded-lg p-4">
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Positions of Responsibility</h3>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Position - Organization - Dates</li>
-              <li>Position - Organization - Dates</li>
-
+              {resume.por.map((e, idx) => {
+                return <li key={idx}>
+                  <span className='text-md text-gray-600 font-bold'>{e.name}</span>
+                  <p className='pl-6 text-gray-600'>{e.date}</p>
+                  <ul className="list-disc pl-6 list-inside text-gray-500">
+                    {e.responsibility.map((e, idx)=>{
+                      return <li key={idx}>{e}</li>;
+                    })}
+                  </ul>
+                </li>;
+              })}
             </ul>
           </div>
-          <div className="bg-white shadow-md rounded-lg p-6 md:col-span-2">
-            <h3 className="text-lg font-semibold mb-4 text-gray-800">Courses</h3>
-            <ul className="list-disc list-inside text-gray-600">
-              <li>Course Name - Institution - Dates</li>
-              <li>Course Name - Institution - Dates</li>
-
+          <div className="bg-white shadow-md rounded-lg p-4 md:col-span-2">
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">Courses</h3>
+            <ul className="list-disc list-inside flex list-none flex-wrap  text-gray-600">
+              {resume.course.map((e, index) => {
+                return <li className='ml-4' key={index}>{e},</li>;
+              })}
             </ul>
           </div>
         </div>

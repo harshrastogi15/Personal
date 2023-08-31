@@ -4,7 +4,7 @@ import theme from '../../theme';
 
 const AboutSection = () => {
   return (
-    <section className={theme.typography.section.mainBlock} id='AboutSection'>
+    <section className={theme.typography.section.mainBlock + ' pt-16'} id='AboutSection'>
       <div className={theme.typography.section.childBlock}>
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="md:w-1/2 md:mr-16">

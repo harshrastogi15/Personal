@@ -14,8 +14,8 @@ module.exports = {
     subheading: 'text-lg md:text-xl mb-8',
     button: 'px-6 py-3 rounded-full font-semibold shadow-md',
     section: {
-      mainBlock: 'bg-gray-100 py-16',
-      childBlock: 'max-w-5xl mx-auto px-4 sm:px-6 lg:px-8',
+      mainBlock: 'bg-gray-100 py-8',
+      childBlock: 'max-w-5xl mx-auto px-4 sm:px-6 lg:px-6',
     },
   },
 };

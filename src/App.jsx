@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
 import Education from './components/Education';
+import CodingProfiles from './components/CodingProfile';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Education/>
       <Project/>
       <Resume/>
+      <CodingProfiles/>
       <Contact/>
       <Footer/>
     </div>
