@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaLinkedin, FaInstagram, FaGithub, FaEnvelope, FaPhone} from 'react-icons/fa';
+import {FaLinkedin, FaInstagram, FaGithub, FaEnvelope} from 'react-icons/fa';
 import theme from '../../theme';
 import {contactDetail} from '../../assets/Data/data';
 
@@ -19,10 +19,6 @@ const contactSection = () => {
               <a href={'mailto:'+contactDetail.mail} className="text-gray-600 hover:text-blue-500">
                 {contactDetail.mail}
               </a>
-            </div>
-            <div className="flex items-center space-x-4 mt-2">
-              <FaPhone className="text-gray-600" />
-              <a href={'mailto:'+contactDetail.phone} className="text-gray-600">{contactDetail.phone}</a>
             </div>
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">

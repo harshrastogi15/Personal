@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../../assets/Image/Harsh_Rastogi.png';
+import profileImage from '../../assets/Image/Harsh_Rastogi.jpg';
 import theme from '../../theme';
 
 const AboutSection = () => {
@@ -12,13 +12,11 @@ const AboutSection = () => {
               About Me
             </h2>
             <p className="text-gray-600 mb-6">
-              Hello! I&apos;m Harsh Rastogi, a dedicated Computer Science student at IIIT Bhagalpur with a passion for programming and technology. With a solid foundation in fundamentals and a love for problem-solving, I maintain a CGPA of 8.83 while embracing courses like Data Structures, Computer Networks, and Operating Systems.
-
-              Proficient in C/C++, Python, and JavaScript, I specialize in web development using ReactJs, NodeJS, and Bootstrap. I&apos;ve crafted seamless user experiences through projects like a quiz platform and a book discovery platform.
-
+              Hello! I&apos;m Harsh Rastogi, a Computer Science graduate from IIIT Bhagalpur (Class of 2024) with a CGPA of 8.99. With a strong passion for programming and problem-solving, I&apos;ve honed my skills in various domains including Data Structures, Computer Networks, and Operating Systems. My technical expertise lies in C/C++, Python, and JavaScript, with specialization in full-stack web development using ReactJS, NodeJS, and Bootstrap.
+              During my academic journey, I developed multiple projects such as a quiz platform and a book discovery platform, focusing on crafting user-friendly and efficient experiences. As a CodeForces Specialist and avid LeetCode problem solver, I&apos;ve tackled over 500 coding problems and participated in notable coding competitions, including ICPC regionals.
             </p>
             <p className="text-gray-600 mb-6">
-              As a CodeForces Specialist and LeetCode enthusiast, I&apos;ve solved over 400 problems and participated in prestigious coding competitions. My coordination role at the Web Development Club has allowed me to enhance my skills while fostering a collaborative spirit.
+              Currently, I&apos;m working as a Software Engineering Specialist at GE Vernova, where I contribute to key projects and leverage my skills in automation, and cloud technologies.
             </p>
           </div>
           <div className="md:w-1/2 h-80 md:h-80">

@@ -14,7 +14,7 @@ const Resume = () => {
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Experience</h3>
             <ul className="list-disc list-inside text-gray-600">
               {resume.experience.map((e, idx) => {
-                return <li key={idx}>
+                return <li key={idx} className='pt-4'>
                   <span className='text-md text-gray-600 font-bold'>{e.name}</span>
                   <p className='pl-6 text-gray-600'>{e.date}</p>
                   <ul className="list-disc pl-6 list-inside text-gray-500">
@@ -26,29 +26,31 @@ const Resume = () => {
               })}
             </ul>
           </div>
-          <div className="bg-white shadow-md rounded-lg p-4">
-            <h3 className="text-lg font-semibold mb-4 text-gray-800">Positions of Responsibility</h3>
-            <ul className="list-disc list-inside text-gray-600">
-              {resume.por.map((e, idx) => {
-                return <li key={idx}>
-                  <span className='text-md text-gray-600 font-bold'>{e.name}</span>
-                  <p className='pl-6 text-gray-600'>{e.date}</p>
-                  <ul className="list-disc pl-6 list-inside text-gray-500">
-                    {e.responsibility.map((e, idx)=>{
-                      return <li key={idx}>{e}</li>;
-                    })}
-                  </ul>
-                </li>;
-              })}
-            </ul>
-          </div>
-          <div className="bg-white shadow-md rounded-lg p-4 md:col-span-2">
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">Courses</h3>
-            <ul className="list-disc list-inside flex list-none flex-wrap  text-gray-600">
-              {resume.course.map((e, index) => {
-                return <li className='ml-4' key={index}>{e},</li>;
-              })}
-            </ul>
+          <div className="grid grid-rows-2">
+            <div className="bg-white shadow-md rounded-lg p-4">
+              <h3 className="text-lg font-semibold mb-4 text-gray-800">Positions of Responsibility</h3>
+              <ul className="list-disc list-inside text-gray-600">
+                {resume.por.map((e, idx) => {
+                  return <li key={idx}>
+                    <span className='text-md text-gray-600 font-bold'>{e.name}</span>
+                    <p className='pl-6 text-gray-600'>{e.date}</p>
+                    <ul className="list-disc pl-6 list-inside text-gray-500">
+                      {e.responsibility.map((e, idx)=>{
+                        return <li key={idx}>{e}</li>;
+                      })}
+                    </ul>
+                  </li>;
+                })}
+              </ul>
+            </div>
+            <div className="bg-white shadow-md rounded-lg p-4 mt-2">
+              <h3 className="text-lg font-semibold mb-2 text-gray-800">Courses</h3>
+              <ul className="list-disc list-inside list-none flex-wrap  text-gray-600">
+                {resume.course.map((e, index) => {
+                  return <li className='ml-4' key={index}>{e},</li>;
+                })}
+              </ul>
+            </div>
           </div>
         </div>
         <div className="mt-8 text-center">

@@ -21,7 +21,6 @@ const CodingProfiles = () => {
               <FaCode/>
               <h3 className="text-md font-semibold text-gray-800">{profile.name}</h3>
               <p className="text-blue-600">{profile.username}</p>
-              <p className="text-gray-800">{profile.message}</p>
             </a>
           ))}
         </div>
