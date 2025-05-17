@@ -11,11 +11,13 @@ import Footer from './components/Footer';
 import Resume from './components/Resume';
 import Education from './components/Education';
 import CodingProfiles from './components/CodingProfile';
+import MetaTags from './components/MetaTags';
 
 
 function App() {
   return (
     <div className="App">
+      <MetaTags/>
       <Navbar/>
       <Hero/>
       <About/>
