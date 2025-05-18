@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/Personal/static/css/main.9a1a79f7.css",
-    "main.js": "/Personal/static/js/main.400e9395.js",
+    "main.css": "/Personal/static/css/main.c1e49e5a.css",
+    "main.js": "/Personal/static/js/main.c7c2e952.js",
     "static/js/453.acca0757.chunk.js": "/Personal/static/js/453.acca0757.chunk.js",
+    "static/media/heroBackground.png": "/Personal/static/media/heroBackground.a3c12e9b7feb0fd66b9d.png",
     "static/media/Book_store.png": "/Personal/static/media/Book_store.df6d6c9ace045e95b81a.png",
     "static/media/Harsh_Rastogi.jpg": "/Personal/static/media/Harsh_Rastogi.5313cf18e4bc094ed8ad.jpg",
-    "static/media/Bracketsolver.png": "/Personal/static/media/Bracketsolver.9a34b3679928909122ff.png",
-    "static/media/Text_On_Image.png": "/Personal/static/media/Text_On_Image.72b17422f5f00dcc057f.png",
     "static/media/Quiz.png": "/Personal/static/media/Quiz.98c7c5db9d9e3c417b72.png",
     "static/media/icpc_logo.png": "/Personal/static/media/icpc_logo.e100f1e0f9c867dd226d.png",
-    "static/media/Hrnote.png": "/Personal/static/media/Hrnote.c706d507ec31f643c443.png",
     "index.html": "/Personal/index.html",
-    "main.9a1a79f7.css.map": "/Personal/static/css/main.9a1a79f7.css.map",
-    "main.400e9395.js.map": "/Personal/static/js/main.400e9395.js.map",
+    "main.c1e49e5a.css.map": "/Personal/static/css/main.c1e49e5a.css.map",
+    "main.c7c2e952.js.map": "/Personal/static/js/main.c7c2e952.js.map",
     "453.acca0757.chunk.js.map": "/Personal/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a1a79f7.css",
-    "static/js/main.400e9395.js"
+    "static/css/main.c1e49e5a.css",
+    "static/js/main.c7c2e952.js"
   ]
 }
