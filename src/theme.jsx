@@ -11,7 +11,7 @@ module.exports = {
   typography: {
     title: 'text-4xl md:text-5xl lg:text-6xl font-bold mb-4',
     heading: 'text-2xl text-[#00004d] md:text-3xl lg:text-4xl font-bold mb-4 text-gray-800',
-    subheading: 'text-lg md:text-xl mb-8',
+    subheading: 'text-lg md:text-xl mb-4',
     button: 'px-6 py-3 rounded-full font-semibold shadow-md',
     section: {
       mainBlock: 'bg-gray-100 py-8',

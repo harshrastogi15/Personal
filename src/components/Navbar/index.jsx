@@ -31,12 +31,12 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-[#00001a]">
+    <nav className="bg-[#00001a] fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 text-white text-xl">
-              Harsh Rastogi
+              Portfolio
             </div>
           </div>
           <div className="hidden md:block">
@@ -67,7 +67,7 @@ const Navbar = () => {
       <div onTouchStart={(e) => enterLeave(e, 0)} onTouchEnd={(e) => enterLeave(e, 1)} className={`fixed inset-y-0 left-0 ${isOpen ? 'w-full' : 'w-0'} bg-gray-800 transition-all duration-300 ease-in-out md:hidden overflow-auto`} >
         <div className="px-4 py-6 space-y-3">
           <div className="flex-shrink-0 text-white text-xl">
-            Harsh Rastogi
+            Portfolio
           </div>
           {
             sections.map((e) => {

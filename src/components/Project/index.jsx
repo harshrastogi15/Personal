@@ -35,6 +35,17 @@ const ProjectShowcase = () => {
             </div>
           ))}
         </div>
+        <div className="text-center mt-8">
+          <p className="text-gray-600 mb-2">Want to see more of my work?</p>
+          <a
+            href="https://github.com/harshrastogi15"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-block px-6 py-3 rounded-full font-semibold bg-blue-500 text-white hover:bg-blue-600 transition duration-300 ease-in-out`}
+          >
+            Visit My GitHub
+          </a>
+        </div>
       </div>
     </section>
   );
