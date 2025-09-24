@@ -11,7 +11,7 @@ const education = () => {
         <div className="relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <div className="bg-white shadow-md rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-2 txt-gray-800">B.Tech. - Indian Institute of Information Technology Bhagalpur || CGPA - 8.99</h3>
+              <h3 className="text-lg font-semibold mb-2 txt-gray-800">B.Tech. - Indian Institute of Information Technology Bhagalpur || CGPA - 8.99 (<i>Gold Medalist</i>)</h3>
               <p className="text-gray-600">Computer Science and Engineering : 2020 - 2024</p>
             </div>
             <div className="bg-white shadow-md rounded-lg p-6">

@@ -1,45 +1,49 @@
 
 export const skills = [
+  'SpringBoot',
+  'Spring MVC',
   'NodeJs',
+  'Automation',
   'JavaScript',
   'React',
   'Python',
+  'SQL workflow',
   'C++',
   'Java',
-  'Sql',
+  'PostgreSQL',
   'MongoDB',
+  'Data Modeling',
   'HTML/CSS',
-  'Cucumber Framework',
-  'Groovy Script',
-  'Katalon Studio',
-  'Kubernetes',
-  'Helm & ArgoCD',
-  'CI/CD',
+  // 'Cucumber Framework',
+  // 'Groovy Script',
+  // 'Katalon Studio',
+  // 'CI/CD',
   'Git/Github',
 ];
 
 // Achievements
 import icpc from '../Image/icpc_logo.png';
 import kickStart from '../Image/kickStart.png';
+import medal from '../Image/medal.jpg';
 
 export const achievements = [
   {
-    title: 'Ranked 81 at ICPC Mathura-Kanpur Regional site 2022',
-    message: 'Amongst 150 teams across the country',
-    year: '2023',
-    thumbnail: icpc,
+    title: 'President’s Gold Medal',
+    message: 'Highest CGPA in B.Tech batch, IIIT Bhagalpur',
+    year: '2025',
+    thumbnail: medal,
     link: '',
   },
   {
-    title: 'Secured a slot at ICPC Mathura-Kanpur Regionals 2022',
-    message: 'AIR - 152 in preliminary round',
-    year: '2023',
-    thumbnail: icpc,
+    title: 'Director’s Gold Medal',
+    message: 'Highest CGPA in CSE branch, IIIT Bhagalpur',
+    year: '2025',
+    thumbnail: medal,
     link: '',
   },
   {
-    title: 'Secured a slot at ICPC Amritapuri Regionals 2022',
-    message: 'AIR - 238 in preliminary round',
+    title: 'ICPC 2022 - Qualified for Kanpur & Amritapuri Regionals',
+    message: 'ranked 81st at Kanpur site',
     year: '2023',
     thumbnail: icpc,
     link: '',
@@ -57,21 +61,27 @@ export const achievements = [
 // Project Links
 import bookStore from '../Image/Book_store.png';
 import quiz from '../Image/Quiz.png';
+import exam from '../Image/exam.v2.png';
 // import textOnImage from '../Image/Text_On_Image.png';
 // import bracketSolver from '../Image/Bracketsolver.png';
 // import hrNote from '../Image/Hrnote.png';
 
 export const projects = [
   {
-    title: 'BookStore',
-    image: bookStore,
-    link: 'https://hr-book-store.vercel.app/',
-    githubLink: 'https://github.com/harshrastogi15/Book_Store',
+    title: 'Exam Portal (v2) - In Progress',
+    image: exam,
+    githubLink: 'https://github.com/harshrastogi15/examportal.v2/',
   },
   {
     title: 'Quiz Platform',
     image: quiz,
     githubLink: 'https://github.com/harshrastogi15/examportal',
+  },
+  {
+    title: 'BookStore',
+    image: bookStore,
+    link: 'https://hr-book-store.vercel.app/',
+    githubLink: 'https://github.com/harshrastogi15/Book_Store',
   },
   // {
   //   title: 'Text_On_Image',
@@ -130,26 +140,27 @@ export const resume = {
       name: 'Software Engineering Specialist | GE Vernova',
       date: 'Aug 2024 - Present',
       responsibility: [
-        'Deployed and managed project in on-premise environments using Kubernetes (K8s), Helm,and ArgoCD, ensuring reliable and efficient application delivery.',
-        'Developed and maintained Python scripts for automated data validation to ensure integrity across backend systems.',
-        'Validated full-stack functionality through end-to-end testing of UI and backend components to ensure system integrity and requirement alignment.',
+        'Automate backend data validation using Python scripts, reducing manual effort by ~70% and improving ingestion accuracy for large structured datasets',
+        'Design SQL workflows for data ingestion and transformation, ensuring validation and consistency across systems',
+        'Support deployment of services in on-prem infrastructure using Kubernetes, Helm, and ArgoCD',
+        'Contribute to backend validation flows, ensuring system behavior aligns with business rules across microservices',
       ],
     },
     {
       name: 'Digital Technology Intern | GE Vernova',
       date: 'Jan 2024 - July 2024',
       responsibility: [
-        'Automated frontend and backend testing for UI and APIs using Groovy and Cucumber, streamlining workflows and minimizing manual testing.',
-        'Improved test accuracy and coverage by identifying and resolving issues in automation scripts.',
+        'Automated frontend and backend testing for UI and APIs using Groovy and Cucumber, streamlining workflows and minimizing manual testing',
+        'Improved test accuracy and coverage by identifying and resolving issues in automation scripts',
       ],
     },
     {
       name: 'Full Stack Developer Intern | RiseUpp',
       date: 'Mar 2023 - June 2023',
       responsibility: [
-        'Designed and developed scalable backend services using Node.js, Express, and MongoDB,enabling efficient data flow and high system performance.',
-        'Built responsive and interactive frontend interfaces with React.js, improving user experience.',
-        'Integrated Elasticsearch for fast and accurate search capabilities, and implemented file upload handling using Multer to support multimedia data.',
+        'Designed and developed scalable backend services using Node.js, Express, and MongoDB,enabling efficient data flow and high system performance',
+        'Built responsive and interactive frontend interfaces with React.js, improving user experience',
+        'Integrated Elasticsearch for fast and accurate search functionality',
       ],
     },
   ],
