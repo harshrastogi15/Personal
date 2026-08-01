@@ -24,7 +24,7 @@ const contactSection = () => {
           <div className="bg-white shadow-md rounded-lg p-4">
             <h3 className="text-lg text-center font-semibold mb-2 text-gray-800">Social Media</h3>
             <div className="flex items-center space-x-10 flex justify-center">
-              <a href="https://www.linkedin.com/in/harsh-rastogi-114962200/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/harshrastogi15/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-3xl text-blue-500 hover:text-blue-700 " />
               </a>
               <a href="https://www.instagram.com/harsh_rastogi15" target="_blank" rel="noopener noreferrer">

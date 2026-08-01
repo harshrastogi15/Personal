@@ -1,24 +1,20 @@
 
 export const skills = [
+  'Java',
   'SpringBoot',
   'Spring MVC',
-  'NodeJs',
-  'Automation',
+  'PostgreSQL',
+  'SQL workflow',
+  'Apache Camel',
+  'C++',
+  'Python',
   'JavaScript',
   'React',
-  'Python',
-  'SQL workflow',
-  'C++',
-  'Java',
-  'PostgreSQL',
   'MongoDB',
-  'Data Modeling',
-  'HTML/CSS',
-  // 'Cucumber Framework',
-  // 'Groovy Script',
-  // 'Katalon Studio',
-  // 'CI/CD',
+  'NodeJs',
+  'Docker',
   'Git/Github',
+  'Postman',
 ];
 
 // Achievements
@@ -28,16 +24,9 @@ import medal from '../Image/medal.jpg';
 
 export const achievements = [
   {
-    title: 'President’s Gold Medal',
-    message: 'Highest CGPA in B.Tech batch, IIIT Bhagalpur',
-    year: '2025',
-    thumbnail: medal,
-    link: '',
-  },
-  {
-    title: 'Director’s Gold Medal',
-    message: 'Highest CGPA in CSE branch, IIIT Bhagalpur',
-    year: '2025',
+    title: 'Institute President’s Gold Medal',
+    message: 'Highest CGPA (8.99/10) across the B.Tech batch',
+    year: '2024',
     thumbnail: medal,
     link: '',
   },
@@ -60,27 +49,28 @@ export const achievements = [
 
 // Project Links
 import bookStore from '../Image/Book_store.png';
-import quiz from '../Image/Quiz.png';
+// import quiz from '../Image/Quiz.png';
 import exam from '../Image/exam.v2.png';
+import aiLog from '../Image/ai-log.png';
 // import textOnImage from '../Image/Text_On_Image.png';
 // import bracketSolver from '../Image/Bracketsolver.png';
 // import hrNote from '../Image/Hrnote.png';
 
 export const projects = [
   {
-    title: 'Exam Portal (v2) - In Progress',
+    title: 'Exam Portal',
     image: exam,
     githubLink: 'https://github.com/harshrastogi15/examportal.v2/',
   },
   {
-    title: 'Quiz Platform',
-    image: quiz,
-    githubLink: 'https://github.com/harshrastogi15/examportal',
+    title: 'AI Log Analysis',
+    image: aiLog,
+    githubLink: 'https://github.com/harshrastogi15/ai-log-insight',
   },
   {
     title: 'BookStore',
     image: bookStore,
-    link: 'https://hr-book-store.vercel.app/',
+    // link: 'https://hr-book-store.vercel.app/',
     githubLink: 'https://github.com/harshrastogi15/Book_Store',
   },
   // {
@@ -123,7 +113,7 @@ export const codingProfiles = [
 ];
 
 export const contactDetail = {
-  'mail': 'hrastogi2002@gmail.com',
+  'mail': 'harsh.rastogi.work@gmail.com',
 };
 
 export const resume = {
@@ -137,13 +127,13 @@ export const resume = {
   ],
   experience: [
     {
-      name: 'Software Engineering Specialist | GE Vernova',
+      name: 'Software Engineering Specialist (SDE-1) | GE Vernova',
       date: 'Aug 2024 - Present',
       responsibility: [
-        'Automate backend data validation using Python scripts, reducing manual effort by ~70% and improving ingestion accuracy for large structured datasets',
-        'Design SQL workflows for data ingestion and transformation, ensuring validation and consistency across systems',
-        'Support deployment of services in on-prem infrastructure using Kubernetes, Helm, and ArgoCD',
-        'Contribute to backend validation flows, ensuring system behavior aligns with business rules across microservices',
+        'Designed an hourly Apache Camel-based ingestion pipeline processing up to 600 JSON files (~600K records) per run, with schema validation and PostgreSQL loading',
+        'Built automated Python-based quality checks, reducing manual verification effort by ~90%',
+        'Optimized PostgreSQL queries using JOIN LATERAL, improving performance for pipeline transformation and Apache Superset dashboard reporting',
+        'Built and owned the acknowledgment workflow for end-to-end pipeline confirmation',
       ],
     },
     {
@@ -154,15 +144,15 @@ export const resume = {
         'Improved test accuracy and coverage by identifying and resolving issues in automation scripts',
       ],
     },
-    {
-      name: 'Full Stack Developer Intern | RiseUpp',
-      date: 'Mar 2023 - June 2023',
-      responsibility: [
-        'Designed and developed scalable backend services using Node.js, Express, and MongoDB,enabling efficient data flow and high system performance',
-        'Built responsive and interactive frontend interfaces with React.js, improving user experience',
-        'Integrated Elasticsearch for fast and accurate search functionality',
-      ],
-    },
+    // {
+    //   name: 'Full Stack Developer Intern | RiseUpp',
+    //   date: 'Mar 2023 - June 2023',
+    //   responsibility: [
+    //     'Designed and developed scalable backend services using Node.js, Express, and MongoDB,enabling efficient data flow and high system performance',
+    //     'Built responsive and interactive frontend interfaces with React.js, improving user experience',
+    //     'Integrated Elasticsearch for fast and accurate search functionality',
+    //   ],
+    // },
   ],
   por: [
     {

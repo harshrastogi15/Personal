@@ -15,7 +15,7 @@ const AboutSection = () => {
               I&apos;m <strong>Harsh Rastogi</strong>, a Software Engineer passionate about backend development, cloud technologies, and system design. I graduated from IIIT Bhagalpur <strong>(B.Tech, CSE, 2024, CGPA 8.99)</strong> where I was awarded the <strong>Gold Medal</strong> for Academic Excellence.
             </p>
             <p className="mt-3 text-gray-700">
-              Currently, I&apos;m working at GE Vernova as a <strong>Software Engineering Specialist</strong>, where I build backend validation workflows, SQL pipelines, and scalable services deployed through Kubernetes and CI/CD pipelines.
+              Currently, I&apos;m working at GE Vernova as a <strong>Software Engineering Specialist</strong>, where I build backend validation workflows, Apache Camel-based data ingestion pipelines, optimize PostgreSQL queries.
             </p>
             <p className="mt-3 text-gray-700">
               Beyond work, I&apos;ve proven my problem-solving ability as an ICPC Regionalist (Kanpur & Amritapuri) and enjoy applying algorithmic thinking to real-world software challenges.
