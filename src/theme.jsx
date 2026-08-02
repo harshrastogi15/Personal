@@ -1,5 +1,5 @@
 // src/theme.js
-module.exports = {
+export default {
   colors: {
     primary: 'bg-[#00004d]',
     textPrimary: 'text-white',

@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import scrollToSection from '../../Function/ScrollToSection';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
   const [mouseevent, updateEvent] = useState(-1);
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -29,6 +30,25 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveSection(entry.target.id);
+            }
+          });
+        },
+        {rootMargin: '-50% 0px -50% 0px'},
+    );
+
+    sections.forEach((s) => {
+      const el = document.getElementById(s.targetId);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <nav className="bg-[#00001a] fixed w-full z-10">
@@ -43,7 +63,11 @@ const Navbar = () => {
             <div className="ml-4 flex items-center space-x-8">
               {
                 sections.map((e) => {
-                  return <div key={e.targetId} className="text-gray-300 hover:text-white cursor-pointer" onClick={() => scrollToSection(e.targetId)}>
+                  const isActive = activeSection === e.targetId;
+                  return <div key={e.targetId} className={`cursor-pointer transition-colors ${
+                  isActive ? 'text-white font-semibold border-b-2 border-blue-400 pb-1' : 'text-gray-300 hover:text-white'
+                  }`}
+                  onClick={() => scrollToSection(e.targetId)}>
                     {e.name}
                   </div>;
                 })
