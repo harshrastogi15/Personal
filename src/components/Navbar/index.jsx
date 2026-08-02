@@ -10,9 +10,9 @@ const Navbar = () => {
   };
   const sections = [
     {name: 'About', targetId: 'AboutSection'},
-    {name: 'Project', targetId: 'ProjectSection'},
     {name: 'Education', targetId: 'EducationSection'},
     {name: 'Achievement', targetId: 'AchievementSection'},
+    {name: 'Project', targetId: 'ProjectSection'},
     {name: 'Resume', targetId: 'ResumeSection'},
     {name: 'Contact', targetId: 'ContactSection'},
   ];

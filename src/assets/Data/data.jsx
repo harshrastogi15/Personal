@@ -1,20 +1,21 @@
 
 export const skills = [
-  'Java',
-  'SpringBoot',
-  'Spring MVC',
-  'PostgreSQL',
-  'SQL workflow',
-  'Apache Camel',
-  'C++',
-  'Python',
-  'JavaScript',
-  'React',
-  'MongoDB',
-  'NodeJs',
-  'Docker',
-  'Git/Github',
-  'Postman',
+  {
+    category: 'Languages',
+    items: ['Java', 'C++', 'Python', 'JavaScript'],
+  },
+  {
+    category: 'Backend & Frameworks',
+    items: ['SpringBoot', 'Spring MVC', 'Apache Camel', 'NodeJs'],
+  },
+  {
+    category: 'Databases',
+    items: ['PostgreSQL', 'MongoDB', 'SQL workflow'],
+  },
+  {
+    category: 'Tools & Platforms',
+    items: ['Apache Superset', 'Keycloak / OAuth2', 'MinIO', 'Docker', 'Git/Github', 'Postman'],
+  },
 ];
 
 // Achievements

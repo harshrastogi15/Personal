@@ -2,6 +2,8 @@
 export default {
   colors: {
     primary: 'bg-[#00004d]',
+    accent: 'text-amber-500',
+    accentBg: 'bg-amber-400',
     textPrimary: 'text-white',
     buttonBg: 'bg-white',
     buttonText: 'text-blue-900',

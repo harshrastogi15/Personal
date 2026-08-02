@@ -12,6 +12,9 @@ const HeroSection = () => {
         <h1 className={`${theme.typography.title} text-center`}>
           Harsh Rastogi
         </h1>
+        <span className={`inline-block mx-auto bg-green-100 text-green-800 text-sm font-semibold px-4 py-1 rounded-full mb-4`}>
+          🟢 Open to Backend / SDE opportunities
+        </span>
         <p className={`${theme.typography.subheading} text-center`}>
           Software Engineer | Backend Developer | CSE&apos;24 IIIT Bhagalpur
         </p>
